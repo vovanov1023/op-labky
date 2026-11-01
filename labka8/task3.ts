@@ -1,4 +1,4 @@
-const contract = (fn: Function, ...types: any[]) => {
+const contract = (fn: Function, ...types: Function[]) => {
     return (...args: any[]) => {
 
         const argTypes = types.slice(0, -1);
